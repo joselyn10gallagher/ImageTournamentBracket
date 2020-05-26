@@ -1,0 +1,73 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Image Tournament</title>
+		<link rel="stylesheet" href="style.css" />
+		<link href="hover.css" rel="stylesheet" media="all">
+	</head>
+
+	<body>
+		<div class="title font">
+			<h1>Image Tournament Bracket: Choose Your Favorite Image!</h1>
+		</div>
+		<div class="touranment">
+			<div class="bigcolumn">
+			<!-- Images Column -->
+				<div class="challengeone">
+					<div class="box1" id="one">
+						<img src="" class="imgx maroonboarder hvr-pulse-grow" onclick="optionOne()">
+					</div>
+					<div class="box1" id="two">
+						<img src="" class="imgx maroonboarder hvr-pulse-grow" onclick="optionTwo()">
+					</div>
+					<div class="box1"  id="three">
+						<img src="" class="imgx maroonboarder hvr-pulse-grow" onclick="optionThree()">
+					</div>
+					<div class="box1" id="four">
+						<img src="" class="imgx maroonboarder hvr-pulse-grow" onclick="optionFour()">
+					</div>
+				</div>
+			<!-- SemiFinals Column -->
+				<div class="semifinals">
+					<div class="box2"  id="onetwo" onclick="optionSemifinal1()"></div>
+					<div class="box2" id="threefour" onclick="optionSemifinal2()"></div>
+				</div>
+			<!-- Finals Column -->
+				<div class="finals"  id="finalsHolder" onclick="pickWinner1()"></div>
+			</div>
+		<!-- Winner Column -->
+			<div class="smallcolumn"  id="winner"></div>
+			<!-- Finals2 Column -->
+			<div class="bigcolumn">
+				<div class="finals" id="finalsHolderTwo" onclick="pickWinner2()"></div>
+			<!-- SemiFinals2 Column -->
+				<div class="semifinals">
+					<div class="box2" id="fivesix" onclick="optionSemifinal3()"></div>
+					<div class="box2" id="seveneight" onclick="optionSemifinal4()"></div>
+				</div>
+			<!-- Images2 Column -->
+				<div class="challengeone">
+					<div class="box1" id="five">
+						<img src="" class="imgx maroonboarder hvr-pulse-grow" onclick="optionFive()">
+					</div>
+					<div class="box1" id="six">
+						<img src="" class="imgx maroonboarder hvr-pulse-grow" onclick="optionSix()">
+					</div>
+					<div class="box1" id="seven">
+						<img src="" class="imgx maroonboarder hvr-pulse-grow" onclick="optionSeven()">
+					</div>
+					<div class="box1" id="eight">
+						<img src="" class="imgx maroonboarder hvr-pulse-grow" onclick="optionEight()">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="confetti displaynone" id="confetti">
+			<img src="images/confetti.gif">
+		</div>
+		<script src="script.js"></script>
+	</body>
+	
+</html>
